@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="circleProgressBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="ahk-Tw-HIT">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lh7-Ne-Py4">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="208.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click Button to add 5% to the progress bar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oq3-KA-Yi2">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="208.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="rcR-nX-pY4">
+                                        <rect key="frame" x="0.0" y="214.5" width="414" height="208.5"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="keN-rz-WXo">
+                                        <rect key="frame" x="0.0" y="429" width="414" height="208.5"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="v6G-9m-ieH">
+                                        <rect key="frame" x="0.0" y="643.5" width="414" height="208.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P60-qF-SnQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="208.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="+5%">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleShadowColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="progressButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BlV-kT-SHh"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="v6G-9m-ieH" secondAttribute="trailing" id="3Zc-nw-EbE"/>
+                                    <constraint firstAttribute="trailing" secondItem="rcR-nX-pY4" secondAttribute="trailing" id="95R-vd-PE3"/>
+                                    <constraint firstAttribute="trailing" secondItem="keN-rz-WXo" secondAttribute="trailing" id="Hg8-gx-Uts"/>
+                                    <constraint firstItem="keN-rz-WXo" firstAttribute="leading" secondItem="ahk-Tw-HIT" secondAttribute="leading" id="IP5-QO-lgm"/>
+                                    <constraint firstItem="v6G-9m-ieH" firstAttribute="leading" secondItem="ahk-Tw-HIT" secondAttribute="leading" id="LZC-Tv-JST"/>
+                                    <constraint firstAttribute="trailing" secondItem="lh7-Ne-Py4" secondAttribute="trailing" id="f5g-C0-RhJ"/>
+                                    <constraint firstItem="rcR-nX-pY4" firstAttribute="leading" secondItem="ahk-Tw-HIT" secondAttribute="leading" id="pcB-ee-g3m"/>
+                                    <constraint firstItem="lh7-Ne-Py4" firstAttribute="leading" secondItem="ahk-Tw-HIT" secondAttribute="leading" id="t6l-0D-uNY"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ahk-Tw-HIT" secondAttribute="trailing" id="8Mr-V7-gpR"/>
+                            <constraint firstItem="ahk-Tw-HIT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="8yG-cO-qsx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ahk-Tw-HIT" secondAttribute="bottom" constant="-34" id="d9z-Qf-IVV"/>
+                            <constraint firstItem="ahk-Tw-HIT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rIe-K6-hlL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="label1" destination="oq3-KA-Yi2" id="4tj-b9-DEZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="73.913043478260875" y="96.428571428571431"/>
+        </scene>
+    </scenes>
+</document>
